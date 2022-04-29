@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+  font-style: none;
+}
+
+:root {
+  --container-color: #060D26;
+  --Ascent-color: #A7B4E0;
+  --dark-color: #272F3A;
+  --white-color: #ffffff;
+  --transition: 300ms;
+}
+
+body {
+  background-image: url("../resources/spiderman 3.jpeg");
+  background-size: cover;
+  font-family: 'Roboto Slab', serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--white-color);
+  position: relative;
+  z-index: -2;
+}
+
+body::after {
+  position: absolute;
+  content: "";
+  height: 100vh;
+  width: 100vw;
+  background: var(--container-color);
+  opacity: 0.1;
+  z-index: -1;
+}
+
+body h2 {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+body h4 {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+body .card {
+  padding: 6px;
+  width: 100px;
+  background: var(--dark-color);
+  border-radius: 30px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 6px;
+}
+
+body .wrapper {
+  background-color: #060D26ee;
+  max-width: 445px;
+  width: 100%;
+  height: 312px;
+  border-radius: 20px;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .wrapper .search-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+}
+
+body .wrapper .search-bar input {
+  padding: 1rem 1.5rem;
+  font-size: 14px;
+  color: var(--white-color);
+  background: var(--dark-color);
+  border-radius: 20px;
+  width: 330px;
+}
+
+body .wrapper .search-bar button {
+  background: var(--dark-color);
+  color: var(--white-color);
+  border-radius: 20px;
+  padding: 1rem 0.6rem;
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+
+body .wrapper .search-bar button:hover {
+  background: var(--Ascent-color);
+  color: var(--dark-color);
+}
+
+body .wrapper .weather-header {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+body .wrapper .weather-header h1 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+body .wrapper .weather-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  place-content: space-between;
+  width: 200px;
+}
+
+body .wrapper .weather-description .down-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+body .wrapper .card.temp {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  body .wrapper {
+    padding: 0;
+    height: 534px;
+    width: 355px;
+  }
+  body .wrapper .search-bar {
+    margin-top: 3rem;
+  }
+  body .wrapper .search-bar input {
+    width: 180px;
+  }
+  body .wrapper .weather-description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1.5rem;
+  }
+  body .wrapper .weather-description .down-part {
+    width: 250px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .wrapper .card.temp {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */

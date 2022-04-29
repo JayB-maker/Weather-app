@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <!-- link to the css file -->
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- Roboto slab Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500&display=swap" rel="stylesheet">
+
+    <!-- Iconscout cdn -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="search-bar">
+            <input type="text" name="search-box" id="search-box" placeholder="Search Country">
+            <button><i class="uil uil-search"></i></button>
+        </div>
+        <div class="weather-header">
+            <h1 class="location">Weather in Nigeria</h1>
+            <h4 class="date">Jan 24, 2022</h4>
+        </div>
+
+        <div class="weather-description">
+            <div class="upper-part">
+                <img src="" alt="">
+                <h1 class="temperature">26°c</h1>
+                <h2 class="description">Cloudy</h2>
+            </div>
+            <div class="down-part">
+                <div class="card temp">
+                    <h4>Temp.</h4>
+                    <h2 class="temperature">26°c</h2>
+                </div>
+                <div class="card">
+                    <h4>Humidity</h4>
+                    <h2 class="humidity">60%</h2>
+                </div>
+                <div class="card">
+                    <h4>Wind</h4>
+                    <h2 class="wind">10km/hr</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
