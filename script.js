@@ -34,3 +34,9 @@ let weather = {
 function searchWeather() {
     weather.search();
 }
+
+document.getElementById("search-box").addEventListener("keyup", (e) =>{
+    if(e.key.toLowerCase() == "enter"){
+        weather.search();
+    }
+})

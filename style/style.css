@@ -160,6 +160,7 @@ body .wrapper .weather-description .upper-part {
 }
 
 body .wrapper .weather-description .upper-part img {
+  height: 100px;
   margin-bottom: -1rem;
 }
 
